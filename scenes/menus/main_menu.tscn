@@ -1,0 +1,347 @@
+[gd_scene load_steps=15 format=3 uid="uid://cj4ld331lb7p5"]
+
+[ext_resource type="Script" uid="uid://caxp2hqax7e4i" path="res://scripts/chips.gd" id="1_2o76q"]
+[ext_resource type="PackedScene" uid="uid://2l2ekqyk3i6x" path="res://scenes/chips/chips_red.tscn" id="2_1hnlc"]
+[ext_resource type="Script" uid="uid://pgcw3q4ip1n4" path="res://scripts/main_menu_ui.gd" id="2_6bivr"]
+[ext_resource type="PackedScene" uid="uid://eygkre1ptkdb" path="res://scenes/chips/chips_blackinside_whiteoutside.tscn" id="3_50h1w"]
+[ext_resource type="FontFile" uid="uid://o2bbndsn5riv" path="res://assets/font/Kenney Future Square.ttf" id="3_imvie"]
+[ext_resource type="PackedScene" uid="uid://b8rego0x8mu67" path="res://scenes/chips/chips_blue.tscn" id="4_euy4r"]
+[ext_resource type="PackedScene" uid="uid://ocxe6jc0gfid" path="res://scenes/chips/chips_yellow.tscn" id="5_bre17"]
+[ext_resource type="PackedScene" uid="uid://d2pkefkgsvcme" path="res://scenes/chips/chips_whiteinside.tscn" id="6_50h1w"]
+[ext_resource type="PackedScene" uid="uid://cxxupasq3gc7s" path="res://scenes/chips/chips_pink.tscn" id="6_88kup"]
+[ext_resource type="PackedScene" uid="uid://bj52b331pqjf" path="res://scenes/chips/chips_green.tscn" id="8_euy4r"]
+[ext_resource type="PackedScene" uid="uid://b1obchswefoku" path="res://scenes/chips/chips_gray.tscn" id="9_bre17"]
+
+[sub_resource type="Environment" id="Environment_ofu2t"]
+background_mode = 1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bmr0k"]
+albedo_color = Color(1.8049e-06, 0.65716, 0.16232, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_cnsl8"]
+material = SubResource("StandardMaterial3D_bmr0k")
+size = Vector3(1000, 1, 1000)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_ofu2t")
+
+[node name="background and shi" type="Node3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="background and shi"]
+transform = Transform3D(0.454341, 0, 0, 0, 0.454341, 0, 0, 0, 0.454341, 0.395602, 0.0361044, 0.0494335)
+mesh = SubResource("BoxMesh_cnsl8")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="background and shi"]
+transform = Transform3D(0.994902, -0.0908928, 0.0436898, -0.0436067, 0.00290105, 0.999045, -0.0909327, -0.995857, -0.00107727, -0.20981, 46.6717, 8.38623)
+light_energy = 1.876
+light_specular = 2.034
+shadow_enabled = true
+spot_range = 47.7336
+spot_attenuation = -0.94
+spot_angle = 89.99
+
+[node name="chips" type="Node3D" parent="background and shi"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.725, -0.373324, 8.29418)
+script = ExtResource("1_2o76q")
+
+[node name="Chip_008_42" parent="background and shi/chips" instance=ExtResource("2_1hnlc")]
+transform = Transform3D(10.599, 0, 0, 0, 10.599, 0, 0, 0, 10.599, 0, 0.722156, 0)
+
+[node name="Chip_008_48" parent="background and shi/chips" instance=ExtResource("2_1hnlc")]
+transform = Transform3D(10.599, 0, 0, 0, 10.599, 0, 0, 0, 10.599, -0.469, 0.891, 0)
+
+[node name="Chip_008_49" parent="background and shi/chips" instance=ExtResource("2_1hnlc")]
+transform = Transform3D(10.599, 0, 0, 0, 10.599, 0, 0, 0, 10.599, 0.327, 1.075, 0)
+
+[node name="Chip_008_50" parent="background and shi/chips" instance=ExtResource("2_1hnlc")]
+transform = Transform3D(10.599, 0, 0, 0, 10.599, 0, 0, 0, 10.599, 0.327, 1.491, 0)
+
+[node name="Chip_008_51" parent="background and shi/chips" instance=ExtResource("2_1hnlc")]
+transform = Transform3D(10.599, 0, 0, 0, 10.599, 0, 0, 0, 10.599, -0.023, 1.491, 0)
+
+[node name="Chip_008_52" parent="background and shi/chips" instance=ExtResource("2_1hnlc")]
+transform = Transform3D(5.07255, 2.34144, -9.00698, 5.18077, -9.23203, 0.517759, -7.73095, -4.65039, -5.56282, -0.539, 1.402, 1.695)
+
+[node name="Chip_060_5" parent="background and shi/chips" instance=ExtResource("3_50h1w")]
+transform = Transform3D(10.599, 0, 0, 0, 10.599, 0, 0, 0, 10.599, 3.93524, 0.960194, 0.50112)
+
+[node name="Chip_060_11" parent="background and shi/chips" instance=ExtResource("3_50h1w")]
+transform = Transform3D(10.599, 0, 0, 0, 10.599, 0, 0, 0, 10.599, 3.935, 0.96, 3.008)
+
+[node name="Chip_060_12" parent="background and shi/chips" instance=ExtResource("3_50h1w")]
+transform = Transform3D(10.599, 0, 0, 0, 10.599, 0, 0, 0, 10.599, 3.935, 1.211, 2.153)
+
+[node name="Chip_060_13" parent="background and shi/chips" instance=ExtResource("3_50h1w")]
+transform = Transform3D(10.599, 0, 0, 0, 10.599, 0, 0, 0, 10.599, 3.935, 1.197, -0.403)
+
+[node name="Chip_060_14" parent="background and shi/chips" instance=ExtResource("3_50h1w")]
+transform = Transform3D(10.599, 0, 0, 0, 10.599, 0, 0, 0, 10.599, 3.935, 1.197, -2.961)
+
+[node name="Chip_060_15" parent="background and shi/chips" instance=ExtResource("3_50h1w")]
+transform = Transform3D(10.599, 0, 0, 0, 10.599, 0, 0, 0, 10.599, 3.935, 0.96, -2.019)
+
+[node name="Chip_055_11" parent="background and shi/chips" instance=ExtResource("4_euy4r")]
+transform = Transform3D(10.599, 0, 0, 0, 10.599, 0, 0, 0, 10.599, 7.10195, 1.00653, 0.113729)
+
+[node name="Chip_055_14" parent="background and shi/chips" instance=ExtResource("4_euy4r")]
+transform = Transform3D(10.599, 0, 0, 0, 10.599, 0, 0, 0, 10.599, 7.102, 1.33, 0.335)
+
+[node name="Chip_055_15" parent="background and shi/chips" instance=ExtResource("4_euy4r")]
+transform = Transform3D(10.599, 0, 0, 0, 10.599, 0, 0, 0, 10.599, 7.363, 1.607, 0.335)
+
+[node name="Chip_045_59" parent="background and shi/chips" instance=ExtResource("5_bre17")]
+transform = Transform3D(10.599, 0, 0, 0, 10.599, 0, 0, 0, 10.599, -2.68362, 0.791367, -3.25719)
+
+[node name="Chip_045_67" parent="background and shi/chips" instance=ExtResource("5_bre17")]
+transform = Transform3D(10.599, 0, 0, 0, 10.599, 0, 0, 0, 10.599, -2.684, 0.94, -3.257)
+
+[node name="Chip_045_68" parent="background and shi/chips" instance=ExtResource("5_bre17")]
+transform = Transform3D(10.599, 0, 0, 0, 10.599, 0, 0, 0, 10.599, -2.684, 1.12492, -3.257)
+
+[node name="Chip_045_69" parent="background and shi/chips" instance=ExtResource("5_bre17")]
+transform = Transform3D(10.599, 0, 0, 0, 10.599, 0, 0, 0, 10.599, -2.684, 1.26792, -3.257)
+
+[node name="Chip_045_70" parent="background and shi/chips" instance=ExtResource("5_bre17")]
+transform = Transform3D(10.599, 0, 0, 0, 10.599, 0, 0, 0, 10.599, -2.684, 1.43892, -3.257)
+
+[node name="Chip_045_71" parent="background and shi/chips" instance=ExtResource("5_bre17")]
+transform = Transform3D(10.599, 0, 0, 0, 10.599, 0, 0, 0, 10.599, -2.684, 1.63392, -3.257)
+
+[node name="Chip_045_72" parent="background and shi/chips" instance=ExtResource("5_bre17")]
+transform = Transform3D(10.599, 0, 0, 0, 10.599, 0, 0, 0, 10.599, -2.684, 1.80692, -3.257)
+
+[node name="Chip_012_53" parent="background and shi/chips" instance=ExtResource("6_50h1w")]
+transform = Transform3D(10.6, 0, 0, 0, 10.6, 0, 0, 0, 10.6, 0.147927, 0.762963, 6.38227)
+
+[node name="Chip_012_57" parent="background and shi/chips" instance=ExtResource("6_50h1w")]
+transform = Transform3D(10.6, 0, 0, 0, 10.6, 0, 0, 0, 10.6, 0.148, 0.925, 6.382)
+
+[node name="Chip_012_58" parent="background and shi/chips" instance=ExtResource("6_50h1w")]
+transform = Transform3D(10.6, 0, 0, 0, 10.6, 0, 0, 0, 10.6, 0.148, 1.073, 6.382)
+
+[node name="Chip_030_36" parent="background and shi/chips" instance=ExtResource("6_88kup")]
+transform = Transform3D(10.6, 0, 0, 0, 10.6, 0, 0, 0, 10.6, -4.65157, 0.861418, -0.00907612)
+
+[node name="Chip_030_37" parent="background and shi/chips" instance=ExtResource("6_88kup")]
+transform = Transform3D(10.6, 0, 0, 0, 10.6, 0, 0, 0, 10.6, -4.652, 0.68, -0.009)
+
+[node name="Chip_019_12" parent="background and shi/chips" instance=ExtResource("8_euy4r")]
+transform = Transform3D(10.599, 0, 0, 0, 10.599, 0, 0, 0, 10.599, 7.11651, 0.880027, 4.15501)
+
+[node name="Chip_019_13" parent="background and shi/chips" instance=ExtResource("8_euy4r")]
+transform = Transform3D(10.599, 0, 0, 0, 10.599, 0, 0, 0, 10.599, 6.89702, 1.04004, 4.15501)
+
+[node name="Chip_019_14" parent="background and shi/chips" instance=ExtResource("8_euy4r")]
+transform = Transform3D(10.599, 0, 0, 0, 10.599, 0, 0, 0, 10.599, 6.89702, 1.2209, 4.64347)
+
+[node name="Chip_019_15" parent="background and shi/chips" instance=ExtResource("8_euy4r")]
+transform = Transform3D(10.599, 0, 0, 0, 10.599, 0, 0, 0, 10.599, 6.89702, 1.32972, 5.08061)
+
+[node name="Chip_040_23" parent="background and shi/chips" instance=ExtResource("9_bre17")]
+transform = Transform3D(10.599, 0, 0, 0, 10.599, 0, 0, 0, 10.599, -2.54316, 0.648553, 4.00649)
+
+[node name="Chip_040_24" parent="background and shi/chips" instance=ExtResource("9_bre17")]
+transform = Transform3D(10.599, 0, 0, 0, 10.599, 0, 0, 0, 10.599, -2.54316, 0.782124, 4.00649)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-0.870416, -0.144761, 0.470553, -1.16618e-08, 0.955793, 0.29404, -0.492317, 0.255937, -0.831938, 2.86272, 2.2465, -1.25842)
+
+[node name="UI" type="Control" parent="Camera3D"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_6bivr")
+
+[node name="Title" type="Label" parent="Camera3D/UI"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -37.0
+offset_right = 243.0
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_imvie")
+theme_override_font_sizes/font_size = 51
+text = "Blackjack"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Buttons" type="VBoxContainer" parent="Camera3D/UI"]
+layout_mode = 1
+offset_left = 3.0
+offset_top = 56.0
+offset_right = 229.0
+offset_bottom = 648.0
+theme_override_constants/separation = 111
+
+[node name="new_game" type="Button" parent="Camera3D/UI/Buttons"]
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_fonts/font = ExtResource("3_imvie")
+text = "New game
+"
+
+[node name="settings" type="Button" parent="Camera3D/UI/Buttons"]
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_fonts/font = ExtResource("3_imvie")
+text = "Settings"
+
+[node name="exit" type="Button" parent="Camera3D/UI/Buttons"]
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_fonts/font = ExtResource("3_imvie")
+text = "Exit
+"
+
+[node name="settings" type="ColorRect" parent="Camera3D/UI"]
+visible = false
+layout_mode = 0
+offset_right = 1376.0
+offset_bottom = 802.0
+color = Color(0, 0, 0, 0.741176)
+
+[node name="Label" type="Label" parent="Camera3D/UI/settings"]
+layout_mode = 0
+offset_left = -21.0
+offset_right = 263.0
+offset_bottom = 58.0
+theme_override_fonts/font = ExtResource("3_imvie")
+theme_override_font_sizes/font_size = 51
+text = "Settings"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="settings_back" type="Button" parent="Camera3D/UI/settings"]
+layout_mode = 0
+offset_left = 1128.0
+offset_top = 641.0
+offset_right = 1391.0
+offset_bottom = 702.0
+theme_override_fonts/font = ExtResource("3_imvie")
+theme_override_font_sizes/font_size = 31
+text = "Back"
+
+[node name="sounds" type="Label" parent="Camera3D/UI/settings"]
+layout_mode = 0
+offset_left = -6.0
+offset_top = 70.0
+offset_right = 137.0
+offset_bottom = 111.0
+theme_override_fonts/font = ExtResource("3_imvie")
+theme_override_font_sizes/font_size = 31
+text = "Sounds:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="sounds_on" type="Button" parent="Camera3D/UI/settings"]
+layout_mode = 0
+offset_left = 132.0
+offset_top = 74.0
+offset_right = 234.0
+offset_bottom = 111.0
+text = "on"
+
+[node name="fullscreen" type="Label" parent="Camera3D/UI/settings"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 134.0
+offset_right = 204.0
+offset_bottom = 175.0
+theme_override_fonts/font = ExtResource("3_imvie")
+theme_override_font_sizes/font_size = 31
+text = "Fullscreen:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="fullscreen_on" type="Button" parent="Camera3D/UI/settings"]
+layout_mode = 0
+offset_left = 212.0
+offset_top = 138.0
+offset_right = 314.0
+offset_bottom = 175.0
+text = "enable"
+
+[node name="fps" type="Label" parent="Camera3D/UI/settings"]
+layout_mode = 0
+offset_top = 195.0
+offset_right = 334.0
+offset_bottom = 231.0
+theme_override_fonts/font = ExtResource("3_imvie")
+theme_override_font_sizes/font_size = 31
+text = "FPS counter:"
+
+[node name="fps_on" type="Button" parent="Camera3D/UI/settings"]
+layout_mode = 0
+offset_left = 238.0
+offset_top = 199.0
+offset_right = 388.0
+offset_bottom = 236.0
+text = "enable"
+
+[node name="about" type="ColorRect" parent="Camera3D/UI"]
+visible = false
+layout_mode = 0
+offset_right = 1375.0
+offset_bottom = 729.0
+color = Color(0, 0, 0, 0.741176)
+
+[node name="title" type="Label" parent="Camera3D/UI/about"]
+layout_mode = 0
+offset_right = 284.0
+offset_bottom = 48.0
+theme_override_fonts/font = ExtResource("3_imvie")
+theme_override_font_sizes/font_size = 51
+text = "ABOUT & CREDITS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="credits and about" type="Label" parent="Camera3D/UI/about"]
+layout_mode = 0
+offset_left = -4.0
+offset_top = 74.0
+offset_right = 256.0
+offset_bottom = 175.0
+theme_override_fonts/font = ExtResource("3_imvie")
+text = "Game made by frostyhill usings lukkys blackjack
+game  tutorial with godot game engine and love <3
+Assets from kenny and sketchfab
+Game avalaible on Itch.io
+Thank you for playing! <3"
+
+[node name="back about" type="Button" parent="Camera3D/UI/about"]
+layout_mode = 0
+offset_left = -2.0
+offset_top = 590.0
+offset_right = 211.0
+offset_bottom = 649.0
+theme_override_fonts/font = ExtResource("3_imvie")
+theme_override_font_sizes/font_size = 46
+text = "Back"
+
+[node name="Label" type="Label" parent="Camera3D"]
+offset_right = 264.0
+offset_bottom = 52.0
+
+[node name="Label2" type="Label" parent="Camera3D"]
+offset_left = 1303.0
+offset_top = 1.0
+offset_right = 1343.0
+offset_bottom = 36.0
+theme_override_fonts/font = ExtResource("3_imvie")
+theme_override_font_sizes/font_size = 25
+
+[connection signal="pressed" from="Camera3D/UI/Buttons/new_game" to="Camera3D/UI" method="_on_new_game_pressed"]
+[connection signal="pressed" from="Camera3D/UI/Buttons/settings" to="Camera3D/UI" method="_on_settings_pressed"]
+[connection signal="pressed" from="Camera3D/UI/Buttons/exit" to="Camera3D/UI" method="_on_exit_pressed"]
+[connection signal="pressed" from="Camera3D/UI/settings/settings_back" to="Camera3D/UI" method="_on_settings_back_pressed"]
+[connection signal="pressed" from="Camera3D/UI/settings/sounds_on" to="Camera3D/UI" method="_on_sounds_on_pressed"]
+[connection signal="pressed" from="Camera3D/UI/settings/fullscreen_on" to="Camera3D/UI" method="_on_fullscreen_on_pressed"]
+[connection signal="pressed" from="Camera3D/UI/settings/fps_on" to="Camera3D/UI" method="_on_fps_on_pressed"]
+[connection signal="pressed" from="Camera3D/UI/about/back about" to="Camera3D/UI" method="_on_back_about_pressed"]

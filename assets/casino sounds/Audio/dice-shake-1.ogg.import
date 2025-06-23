@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://m2jgcl04rw6r"
+path="res://.godot/imported/dice-shake-1.ogg-391fde83f4077ef4df8811893ad7eff4.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/casino sounds/Audio/dice-shake-1.ogg"
+dest_files=["res://.godot/imported/dice-shake-1.ogg-391fde83f4077ef4df8811893ad7eff4.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

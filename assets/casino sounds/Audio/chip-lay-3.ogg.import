@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dwmycgmmashoj"
+path="res://.godot/imported/chip-lay-3.ogg-6ea9dde383a2365a19ba56f9e687e5bd.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/casino sounds/Audio/chip-lay-3.ogg"
+dest_files=["res://.godot/imported/chip-lay-3.ogg-6ea9dde383a2365a19ba56f9e687e5bd.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,16 @@
+res://scenes/cards/card.tscn::77325a99e2897917607f8f3b8e19fd7e::1746692736::res://.godot/exported/133200997/export-1434ee45eb13583567bcc00da4d3687e-card.scn
+res://scenes/cards/card_stack.tscn::8775eeff12e7f8ef5c58bff6d83df132::1746695813::res://.godot/exported/133200997/export-ed584d711b45d844e72998e9ca6419d4-card_stack.scn
+res://scenes/chips/chips.tscn::1c8e63443a1716c0269743e8f7043e37::1749280728::res://.godot/exported/133200997/export-3fce1aa4075472c07adede2d5bd84032-chips.scn
+res://scenes/chips/chips_blackinside_whiteoutside.tscn::5b9a4ab10a1ad358319b17ced71e2328::1746359505::res://.godot/exported/133200997/export-2d5abcf929dfc0b80d06897be89f0317-chips_blackinside_whiteoutside.scn
+res://scenes/chips/chips_blue.tscn::af2507b2738f588dc54e55023adb0bfd::1746359505::res://.godot/exported/133200997/export-19b653cc4e3f34914cc75969eccd3cdd-chips_blue.scn
+res://scenes/chips/chips_gray.tscn::944fbe661322ac39c5859ff1241ec134::1746359505::res://.godot/exported/133200997/export-e2d25e387c5e380dd72514a2192e2c51-chips_gray.scn
+res://scenes/chips/chips_green.tscn::957b5930802265bbde7b1f379b078e43::1746359505::res://.godot/exported/133200997/export-2f6f0ed045afc76e0b498601ec7d1aca-chips_green.scn
+res://scenes/chips/chips_pink.tscn::3b763ddd00ffcc905f12b7eb3a0ed9ce::1746359505::res://.godot/exported/133200997/export-35c33ef735100b4917685e3d8cd98b62-chips_pink.scn
+res://scenes/chips/chips_red.tscn::60bbfd52e925846295af591920ef4a9f::1746359505::res://.godot/exported/133200997/export-3271742b008eaa936deefa98266179f2-chips_red.scn
+res://scenes/chips/chips_whiteinside.tscn::4ca340290541c2e3623bb79ed21da43e::1746359505::res://.godot/exported/133200997/export-1b41d5e49e6d0a9ac9a02a2e7ea3c691-chips_whiteinside.scn
+res://scenes/chips/chips_yellow.tscn::8425631b6b4dfb86d109e6a70ae15622::1746359505::res://.godot/exported/133200997/export-c33f96c862b40fe12a6c731f9a76c76f-chips_yellow.scn
+res://scenes/chips/sketchfab_scene.tscn::a16233ed6572f083d87e02a0441c0dd4::1746359505::res://.godot/exported/133200997/export-bbef2a8548b5c131f3e7b21800c3eec1-sketchfab_scene.scn
+res://scenes/game/game.tscn::990c985e52f407e72d061b411df1ae1e::1749301042::res://.godot/exported/133200997/export-69e963a49695dd4030e5c61a12b8ddfe-game.scn
+res://scenes/menus/main_game.tscn::555e0274a97405e7dc0c8364f9013f68::1745932857::res://.godot/exported/133200997/export-9f3550faa8a846055b3f2b4308cab26a-main_game.scn
+res://scenes/menus/main_menu.tscn::327c1a313b2a28e1f2cdba58620dce19::1749131754::res://.godot/exported/133200997/export-f47f7d670953862d9d781ab785fd547c-main_menu.scn
+res://scenes/sprite_3d.tscn::4176f5cb15e17de134b4c714e5a28602::1746559282::res://.godot/exported/133200997/export-ce3461ef8c20bf477aada731d51bedf5-sprite_3d.scn

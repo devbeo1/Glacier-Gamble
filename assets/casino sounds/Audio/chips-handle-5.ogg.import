@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c8h4j4hwlb7a1"
+path="res://.godot/imported/chips-handle-5.ogg-371644f69ac8ff491e48669f636367a8.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/casino sounds/Audio/chips-handle-5.ogg"
+dest_files=["res://.godot/imported/chips-handle-5.ogg-371644f69ac8ff491e48669f636367a8.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

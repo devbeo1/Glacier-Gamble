@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cgosayokf14vr"
+path="res://.godot/imported/card-shuffle.ogg-204dfed93fcd9ff8048d4e9d6a9c811d.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/casino sounds/Audio/card-shuffle.ogg"
+dest_files=["res://.godot/imported/card-shuffle.ogg-204dfed93fcd9ff8048d4e9d6a9c811d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

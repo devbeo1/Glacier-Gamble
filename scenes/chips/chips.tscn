@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://xw1c6j4toy6p"]
+
+[ext_resource type="Script" uid="uid://cijxgmp638m7" path="res://scripts/ch1ps.gd" id="1_n6utb"]
+[ext_resource type="PackedScene" uid="uid://joxed6073xm2" path="res://scenes/sprite_3d.tscn" id="2_b3d1t"]
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_n6utb")
+
+[node name="Sprite3D" parent="." instance=ExtResource("2_b3d1t")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -0.25024, 0.177284, 2.86853)
+
+[node name="chiossos" type="Node3D" parent="."]

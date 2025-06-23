@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://vv7maf8xd1bt"
+path="res://.godot/imported/dice-throw-1.ogg-633412385fbcf3ba9620ac88d77568e1.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/casino sounds/Audio/dice-throw-1.ogg"
+dest_files=["res://.godot/imported/dice-throw-1.ogg-633412385fbcf3ba9620ac88d77568e1.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

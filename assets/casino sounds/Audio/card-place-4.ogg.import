@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b4bwcrg13i0v3"
+path="res://.godot/imported/card-place-4.ogg-a56ad6d928c3ea14ab0694918eacce26.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/casino sounds/Audio/card-place-4.ogg"
+dest_files=["res://.godot/imported/card-place-4.ogg-a56ad6d928c3ea14ab0694918eacce26.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,296 @@
+[gd_scene load_steps=10 format=3 uid="uid://y2sehhofu52h"]
+
+[ext_resource type="Script" uid="uid://co2x8qyvxc6mk" path="res://scripts/game.gd" id="1_0sr1o"]
+[ext_resource type="PackedScene" uid="uid://hbyhn3xq48v3" path="res://assets/table/casino_poker_table.glb" id="1_sul5r"]
+[ext_resource type="FontFile" uid="uid://o2bbndsn5riv" path="res://assets/font/Kenney Future Square.ttf" id="2_87uf6"]
+[ext_resource type="AudioStream" uid="uid://d1pvlhw11pan" path="res://assets/casino sounds/Audio/card-place-1.ogg" id="4_bdhmt"]
+[ext_resource type="PackedScene" uid="uid://xw1c6j4toy6p" path="res://scenes/chips/chips.tscn" id="4_kelw5"]
+[ext_resource type="PackedScene" uid="uid://dj23pwjy6aqk0" path="res://scenes/cards/card_stack.tscn" id="4_lfrn8"]
+[ext_resource type="AudioStream" uid="uid://b08un6ckh4x0n" path="res://assets/casino sounds/Audio/chip-lay-1.ogg" id="5_87uf6"]
+[ext_resource type="AudioStream" uid="uid://cmbshhsd0nkl" path="res://assets/casino sounds/Audio/card-fan-1.ogg" id="6_2a8rs"]
+
+[sub_resource type="Environment" id="Environment_0sr1o"]
+background_mode = 1
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_0sr1o")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.999903, -0.00205811, 0.0137696, -0.0114752, 0.438221, 0.898794, -0.00788392, -0.898865, 0.438155, 0, 4.327, 2.22)
+
+[node name="ui" type="Control" parent="Camera3D"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -1.0
+offset_top = 52.0
+offset_right = 39.0
+offset_bottom = 92.0
+
+[node name="add_chips" type="Control" parent="Camera3D/ui"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="title" type="Label" parent="Camera3D/ui/add_chips"]
+layout_mode = 0
+offset_left = -6.0
+offset_top = 325.0
+offset_right = 237.0
+offset_bottom = 379.0
+theme_override_fonts/font = ExtResource("2_87uf6")
+theme_override_font_sizes/font_size = 41
+text = "buy chips"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="add_chip_1d" type="Button" parent="Camera3D/ui/add_chips"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 611.0
+offset_right = 232.0
+offset_bottom = 651.0
+theme_override_fonts/font = ExtResource("2_87uf6")
+text = "1$"
+
+[node name="add_chip_2_5d" type="Button" parent="Camera3D/ui/add_chips"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 573.0
+offset_right = 232.0
+offset_bottom = 613.0
+theme_override_fonts/font = ExtResource("2_87uf6")
+text = "2.5$"
+
+[node name="add_chip_5d" type="Button" parent="Camera3D/ui/add_chips"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 535.0
+offset_right = 232.0
+offset_bottom = 575.0
+theme_override_fonts/font = ExtResource("2_87uf6")
+text = "5$"
+
+[node name="add_chip_10d" type="Button" parent="Camera3D/ui/add_chips"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 497.0
+offset_right = 232.0
+offset_bottom = 537.0
+theme_override_fonts/font = ExtResource("2_87uf6")
+text = "10$
+"
+
+[node name="add_chip_100d" type="Button" parent="Camera3D/ui/add_chips"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 459.0
+offset_right = 232.0
+offset_bottom = 499.0
+theme_override_fonts/font = ExtResource("2_87uf6")
+text = "100$"
+
+[node name="add_chip_1000d" type="Button" parent="Camera3D/ui/add_chips"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 419.0
+offset_right = 232.0
+offset_bottom = 459.0
+theme_override_fonts/font = ExtResource("2_87uf6")
+text = "1000$"
+
+[node name="add_chip_5000d" type="Button" parent="Camera3D/ui/add_chips"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 382.0
+offset_right = 231.0
+offset_bottom = 422.0
+theme_override_fonts/font = ExtResource("2_87uf6")
+text = "5000$"
+
+[node name="extras" type="Control" parent="Camera3D/ui"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="bought" type="Label" parent="Camera3D/ui/extras"]
+layout_mode = 0
+offset_left = 539.0
+offset_top = -49.0
+offset_right = 706.0
+offset_bottom = -26.0
+theme_override_fonts/font = ExtResource("2_87uf6")
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="money won" type="Label" parent="Camera3D/ui/extras"]
+layout_mode = 0
+offset_left = 1231.0
+offset_top = -47.0
+offset_right = 1571.0
+offset_bottom = 189.0
+theme_override_fonts/font = ExtResource("2_87uf6")
+theme_override_font_sizes/font_size = 50
+
+[node name="money couter" type="Label" parent="Camera3D/ui/extras"]
+layout_mode = 0
+offset_left = 628.0
+offset_top = 580.0
+offset_right = 929.0
+offset_bottom = 648.0
+theme_override_fonts/font = ExtResource("2_87uf6")
+theme_override_font_sizes/font_size = 46
+text = "1000.0$"
+
+[node name="Button" type="Button" parent="Camera3D/ui/extras"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+theme_override_fonts/font = ExtResource("2_87uf6")
+
+[node name="Button2" type="Button" parent="Camera3D/ui/extras"]
+layout_mode = 0
+offset_left = 1153.0
+offset_top = 211.0
+offset_right = 1364.0
+offset_bottom = 256.0
+theme_override_fonts/font = ExtResource("2_87uf6")
+theme_override_font_sizes/font_size = 23
+text = "retry"
+
+[node name="standhittypeshi" type="Control" parent="Camera3D/ui"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="won_lost" type="Label" parent="Camera3D/ui/standhittypeshi"]
+layout_mode = 0
+offset_left = 886.0
+offset_top = -52.0
+offset_right = 1099.0
+offset_bottom = 2.0
+theme_override_fonts/font = ExtResource("2_87uf6")
+theme_override_font_sizes/font_size = 50
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="stand" type="Button" parent="Camera3D/ui/standhittypeshi"]
+layout_mode = 0
+offset_left = 1152.0
+offset_top = 560.0
+offset_right = 1359.0
+offset_bottom = 601.0
+theme_override_fonts/font = ExtResource("2_87uf6")
+text = "stand"
+
+[node name="hit" type="Button" parent="Camera3D/ui/standhittypeshi"]
+layout_mode = 0
+offset_left = 1152.0
+offset_top = 603.0
+offset_right = 1359.0
+offset_bottom = 644.0
+theme_override_fonts/font = ExtResource("2_87uf6")
+text = "hit
+"
+
+[node name="lose" type="Control" parent="Camera3D/ui"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ColorRect" type="ColorRect" parent="Camera3D/ui/lose"]
+layout_mode = 0
+offset_top = -82.0
+offset_right = 1401.0
+offset_bottom = 662.0
+color = Color(0, 0, 0, 1)
+
+[node name="Button" type="Button" parent="Camera3D/ui/lose/ColorRect"]
+layout_mode = 0
+offset_left = 511.0
+offset_top = 343.0
+offset_right = 848.0
+offset_bottom = 403.0
+theme_override_fonts/font = ExtResource("2_87uf6")
+theme_override_font_sizes/font_size = 31
+text = "retry"
+
+[node name="Button2" type="Button" parent="Camera3D/ui/lose/ColorRect"]
+layout_mode = 0
+offset_left = 509.0
+offset_top = 403.0
+offset_right = 846.0
+offset_bottom = 463.0
+theme_override_fonts/font = ExtResource("2_87uf6")
+theme_override_font_sizes/font_size = 31
+text = "exit"
+
+[node name="Label" type="Label" parent="Camera3D/ui/lose/ColorRect"]
+layout_mode = 0
+offset_left = 310.0
+offset_top = 237.0
+offset_right = 1042.0
+offset_bottom = 274.0
+theme_override_fonts/font = ExtResource("2_87uf6")
+theme_override_font_sizes/font_size = 76
+text = "you lost!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="Camera3D"]
+offset_left = 1303.0
+offset_top = 1.0
+offset_right = 1415.0
+offset_bottom = 40.0
+theme_override_fonts/font = ExtResource("2_87uf6")
+theme_override_font_sizes/font_size = 25
+
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("1_sul5r")]
+transform = Transform3D(0.045, 0, 0, 0, 0.045, 0, 0, 0, 0.045, 0, 0, 0)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.017592, 0.999845, 0, -0.999845, 0.017592, 0, 3.15793, 0.661164)
+spot_range = 1689.74
+spot_attenuation = -0.15
+spot_angle = 89.99
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_0sr1o")
+
+[node name="chips" parent="." instance=ExtResource("4_kelw5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0426254, 2.5859, 0.963773)
+
+[node name="audios" type="Node" parent="."]
+
+[node name="card place" type="AudioStreamPlayer" parent="audios"]
+stream = ExtResource("4_bdhmt")
+
+[node name="chip lay" type="AudioStreamPlayer" parent="audios"]
+stream = ExtResource("5_87uf6")
+
+[node name="card fan" type="AudioStreamPlayer" parent="audios"]
+stream = ExtResource("6_2a8rs")
+
+[node name="Node3D" parent="." instance=ExtResource("4_lfrn8")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.48371, 2.50103, 1.10591)
+
+[node name="cards" parent="Node3D" index="0"]
+transform = Transform3D(1.08757, -0.507142, 0, 0.507142, 1.08757, 0, 0, 0, 1.2, 1.22162, -0.193011, 0)
+
+[connection signal="pressed" from="Camera3D/ui/add_chips/add_chip_1d" to="chips" method="_on_add_chip_1d_pressed"]
+[connection signal="pressed" from="Camera3D/ui/add_chips/add_chip_2_5d" to="chips" method="_on_add_chip_2_5d_pressed"]
+[connection signal="pressed" from="Camera3D/ui/add_chips/add_chip_5d" to="chips" method="_on_add_chip_5d_pressed"]
+[connection signal="pressed" from="Camera3D/ui/add_chips/add_chip_10d" to="chips" method="_on_add_chip_10d_pressed"]
+[connection signal="pressed" from="Camera3D/ui/add_chips/add_chip_100d" to="chips" method="_on_add_chip_100d_pressed"]
+[connection signal="pressed" from="Camera3D/ui/add_chips/add_chip_1000d" to="chips" method="_on_add_chip_1000d_pressed"]
+[connection signal="pressed" from="Camera3D/ui/add_chips/add_chip_5000d" to="chips" method="_on_add_chip_5000d_pressed"]
+[connection signal="pressed" from="Camera3D/ui/extras/Button2" to="Node3D" method="_on_button_2_pressed"]
+[connection signal="pressed" from="Camera3D/ui/standhittypeshi/stand" to="Node3D" method="_on_stand_pressed"]
+[connection signal="pressed" from="Camera3D/ui/standhittypeshi/hit" to="Node3D" method="_on_hit_pressed"]
+[connection signal="pressed" from="Camera3D/ui/lose/ColorRect/Button" to="chips" method="_on_button_pressed"]
+[connection signal="pressed" from="Camera3D/ui/lose/ColorRect/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="finished" from="audios/card fan" to="Node3D" method="_on_card_fan_finished"]
+
+[editable path="chips"]
+[editable path="Node3D"]
