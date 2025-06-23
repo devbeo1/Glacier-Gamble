@@ -1,2 +1,2 @@
-# blackjack-public-
-blackjack game made with the lukky tutorial! and using godot game engine
+# blackjack-public
+blackjack game using lukkys tutorial as a template and heavily modifying it with the godot game engine
