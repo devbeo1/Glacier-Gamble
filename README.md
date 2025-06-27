@@ -8,6 +8,11 @@ Contributors names and contact info
 Owner/Frostyhill:
 discord:frostyhill
 
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details
+
+
 ## Version History
 
 * 0.3
