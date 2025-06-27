@@ -74,11 +74,10 @@ func _on_add_chip_5000d_pressed() -> void:
 
 
 func _on_button_pressed() -> void:
-	$"../Node3D".current_x_offset = 0.0
-	$"../Node3D".player_cards_value = 0
-	for chips_children in $"../chips/chiossos".get_children():
-		chips_children.queue_free()
-	for cardsosos in $cards.get_children():
-		cardsosos.queue_free()
+	$"../Node3D".reset_all()
 	$"../Node3D".add_card(randi_range(0,$"../Node3D".cards.size() - 1),true)
 	$"../Node3D".add_card(randi_range(0,$"../Node3D".cards.size() - 1),true)
+	$"../Camera3D/ui/lose".visible = false
+	$"../Camera3D/ui/add_chips".visible = true
+	$"../Camera3D/ui/extras".visible = true
+	$"../Camera3D/ui/standhittypeshi".visible = true

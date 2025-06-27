@@ -1,7 +1,7 @@
 72322a848ab928aa5c89f0cb78209805
-::res://::1750624401
-export_presets.cfg::TextFile::-1::1750181276::0::1::::<><><>0<>0<><>::
-::res://assets/::1746047816
+::res://::1751050989
+export_presets.cfg::TextFile::-1::1751050989::0::1::::<><><>0<>0<><>::
+::res://assets/::1751051111
 ::res://assets/Cards (large)/::1746360694
 _cards.csv::Translation/Translation::224549024935406098::1746359504::1746360694::0::::<><><>0<>0<>883e28e726a615253d3eaa05fe6576a2<>::
 card_back.png::CompressedTexture2D/CompressedTexture2D::31105740416966583::1746359504::1746360694::1::::<><><>0<>0<>ca5fca83b9b04b0552a04095f6a519ec<>res://.godot/imported/card_back.png-82bc88057ce359dcae777f51d62939ef.ctex::
@@ -124,27 +124,16 @@ die-throw-3.ogg::AudioStreamOggVorbis/AudioStreamOggVorbis::8023030677615329854:
 die-throw-4.ogg::AudioStreamOggVorbis/AudioStreamOggVorbis::4981745630768589399::1746359504::1746360694::1::::<><><>0<>0<>ceaab5c093588e9c86d1db6d777ee416<>res://.godot/imported/die-throw-4.ogg-cbc96765af022e722573c1ffbbfdb15a.oggvorbisstr::
 ::res://assets/chips/::1746360711
 scene.gltf::PackedScene/PackedScene::204035695522406494::1746359504::1746360711::1::::<><><>0<>0<>649353295acd14e9df9a51cca5a936dc<>res://.godot/imported/scene.gltf-ad560f0b13fa5be144a0bc4aa027563c.scn::
-::res://assets/font/::1750425377
-69cb7d1200f78cd8df6d0b89e36dbfa6.jpg::CompressedTexture2D::1904461035814053319::1750425376::1750425377::1::::<><><>0<>0<>9ec5d37ec8abf2c2ed484cc787ed631d<>res://.godot/imported/69cb7d1200f78cd8df6d0b89e36dbfa6.jpg-144c195e84117373c459a717673aaa13.ctex::
+::res://assets/font/::1751051102
 Kenney Future Square.ttf::FontFile/FontFile::1038445201353112873::1746359504::1746360694::1::::<><><>0<>0<>9905d2d94910fe653207f18b3db03025<>res://.godot/imported/Kenney Future Square.ttf-2b00ca8e13dbb76eafad41bb235603a7.fontdata::
+::res://assets/icon/::1751051148
+kJt7I9.png::CompressedTexture2D::3293055702093200164::1750180083::1751051181::1::::<><><>0<>0<>bc33e31671e471210fd5081aafe33e67<>res://.godot/imported/kJt7I9.png-95fb8942bc6e1e879a000a9ac49e7395.ctex::
 ::res://assets/table/::1746360713
 casino_poker_table.glb::PackedScene/PackedScene::494856718729666226::1746359504::1746360713::1::::<><><>0<>0<>e84fbf61453774d6dc93d4e3ca2c7ec7<>res://.godot/imported/casino_poker_table.glb-d5a01342f92403b075409c9723f1a8ef.scn::uid://bvbql8tiq3y1k::::res://assets/table/casino_poker_table_0.png
 casino_poker_table_0.png::CompressedTexture2D/CompressedTexture2D::3863443656470890750::1746359504::1746360698::1::::<><><>0<>0<>e065f17f8dab32fcbcbae17591fd5fa6<>res://.godot/imported/casino_poker_table_0.png-b197825b17a8e2966d33a2252a8f7d40.s3tc.ctex<*>res://.godot/imported/casino_poker_table_0.png-b197825b17a8e2966d33a2252a8f7d40.etc2.ctex::
-::res://builds/::1750180670
-::res://builds/html5/::1750181527
-index.apple-touch-icon.png::CompressedTexture2D::2427299073574827153::1750181152::1750181162::1::::<><><>0<>0<>b20b953f96830c88eb72f44c876112a3<>res://.godot/imported/index.apple-touch-icon.png-336189b8712ead404b342fd7fc333e37.ctex::
-index.icon.png::CompressedTexture2D::8161950440987978853::1750181152::1750181162::1::::<><><>0<>0<>4a782e3f820a40a5cfc2d5d27a77c42c<>res://.godot/imported/index.icon.png-71da2d3729ff0c54214cfb2acd42fcd6.ctex::
-index.png::CompressedTexture2D::1224638489877824535::1750181152::1750181162::1::::<><><>0<>0<>a1d20b234465ee0184ee21afe9f62f4c<>res://.godot/imported/index.png-2523555c7d9087f1340cdcb3fd562b42.ctex::
-::res://builds/linux/::1750181457
-::res://builds/mac/::1750181490
-::res://builds/mac/blackjack-mac.app/::1750181264
-::res://builds/mac/blackjack-mac.app/Contents/::1750181271
-::res://builds/mac/blackjack-mac.app/Contents/_CodeSignature/::1750181271
-::res://builds/mac/blackjack-mac.app/Contents/Frameworks/::1750181264
-::res://builds/mac/blackjack-mac.app/Contents/MacOS/::1750181276
-::res://builds/mac/blackjack-mac.app/Contents/Resources/::1750181269
-icon.icns::OtherFile::-1::1750181269::0::1::::<><><>0<>0<><>::
-::res://builds/windows/::1750181502
+::res://builds/::1751051173
+::res://builds/linux/::1751051167
+::res://builds/windows/::1751051178
 ::res://scenes/::1746559282
 sprite_3d.tscn::PackedScene/PackedScene::662004721947139791::1746559282::0::1::::<><><>0<>0<><>::
 ::res://scenes/cards/::1746695813
@@ -167,8 +156,8 @@ game.tscn::PackedScene::1741370874838488325::1750447621::0::1::::<><><>0<>0<><>:
 main_game.tscn::PackedScene/PackedScene::5465082674402798100::1745932857::0::1::::<><><>0<>0<><>::uid://caxp2hqax7e4i::::res://scripts/chips.gd<>uid://o2bbndsn5riv::::res://assets/font/Kenney Future Square.ttf
 main_menu.tscn::PackedScene::5465082674402798100::1750354601::0::1::::<><><>0<>0<><>::uid://caxp2hqax7e4i::::res://scripts/chips.gd<>uid://2l2ekqyk3i6x::::res://scenes/chips/chips_red.tscn<>uid://pgcw3q4ip1n4::::res://scripts/main_menu_ui.gd<>uid://eygkre1ptkdb::::res://scenes/chips/chips_blackinside_whiteoutside.tscn<>uid://o2bbndsn5riv::::res://assets/font/Kenney Future Square.ttf<>uid://b8rego0x8mu67::::res://scenes/chips/chips_blue.tscn<>uid://ocxe6jc0gfid::::res://scenes/chips/chips_yellow.tscn<>uid://d2pkefkgsvcme::::res://scenes/chips/chips_whiteinside.tscn<>uid://cxxupasq3gc7s::::res://scenes/chips/chips_pink.tscn<>uid://bj52b331pqjf::::res://scenes/chips/chips_green.tscn<>uid://b1obchswefoku::::res://scenes/chips/chips_gray.tscn
 ::res://scripts/::1750332624
-card_stack.gd::GDScript::2635449284981704192::1750522623::0::1::::<>Node3D<><>0<>0<><>::
-ch1ps.gd::GDScript::157480569905104492::1750408848::0::1::::<>Node3D<><>0<>0<><>::
+card_stack.gd::GDScript::2635449284981704192::1750936267::0::1::::<>Node3D<><>0<>0<><>::
+ch1ps.gd::GDScript::157480569905104492::1750936576::0::1::::<>Node3D<><>0<>0<><>::
 chips.gd::GDScript/GDScript::4821281419468826850::1748785428::0::1::::<>Node3D<><>0<>0<><>::
 game.gd::GDScript::5812679678144662462::1749296764::0::1::::<>Node3D<><>0<>0<><>::
 main_menu_ui.gd::GDScript/GDScript::1065381139245897815::1749131813::0::1::::<>Control<><>0<>0<><>::

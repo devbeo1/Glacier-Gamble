@@ -93,10 +93,7 @@ func _on_stand_pressed() -> void:
 	elif dealer_card_value > 21:
 		$"../Camera3D/ui/standhittypeshi/won_lost".text = "Dealer busted!"
 		$"../chips".money += 500
-		current_x_offset = 0.0
-		player_cards_value = 0
-		for cardsosos in $cards.get_children():
-			cardsosos.queue_free()
+		reset_cards()
 		add_card(randi_range(0,cards.size() - 1),true)
 		add_card(randi_range(0,cards.size() - 1),true)
 
@@ -108,10 +105,7 @@ func _on_hit_pressed() -> void:
 		$"../Camera3D/ui/standhittypeshi/won_lost".text = "Player wins!"
 		$"../chips".money += 500
 		$"../Camera3D/ui/extras/money won".text = "+500"
-		current_x_offset = 0.0
-		player_cards_value = 0
-		for cardsosos in $cards.get_children():
-			cardsosos.queue_free()
+		reset_cards()
 		add_card(randi_range(0,cards.size() - 1),true)
 		add_card(randi_range(0,cards.size() - 1),true)
 		$"../chips".add_chip(randi_range(0,$"../chips".chip_models.size() - 1))
@@ -119,20 +113,12 @@ func _on_hit_pressed() -> void:
 		$"../Camera3D/ui/standhittypeshi/won_lost".text = "Dealer wins!"
 		$"../chips".money -= 500
 		$"../Camera3D/ui/extras/money won".text = "-500"
-		current_x_offset = 0.0
-		player_cards_value = 0
-		for chips_children in $"../chips/chiossos".get_children():
-			chips_children.queue_free()
-		for cardsosos in $cards.get_children():
-			cardsosos.queue_free()
+		reset_all()
 		add_card(randi_range(0,cards.size() - 1),true)
 		add_card(randi_range(0,cards.size() - 1),true)
 	else:
 		$"../Camera3D/ui/standhittypeshi/won_lost".text = "Draw!"
-		current_x_offset = 0.0
-		player_cards_value = 0
-		for cardsosos in $cards.get_children():
-			cardsosos.queue_free()
+		reset_cards()
 		add_card(randi_range(0,cards.size() - 1),true)
 		add_card(randi_range(0,cards.size() - 1),true)
 
@@ -153,3 +139,17 @@ func _process(_delta):
 		$"../Camera3D/ui/add_chips".visible = false
 		$"../Camera3D/ui/extras".visible = false
 		$"../Camera3D/ui/standhittypeshi".visible = false
+
+func reset_all():
+	$"../Node3D".current_x_offset = 0.0
+	$"../Node3D".player_cards_value = 0
+	for chips_children in $"../chips/chiossos".get_children():
+		chips_children.queue_free()
+	for cardsosos in $cards.get_children():
+		cardsosos.queue_free()
+
+func reset_cards():
+	current_x_offset = 0.0
+	player_cards_value = 0
+	for cardsosos in $cards.get_children():
+		cardsosos.queue_free()
