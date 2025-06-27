@@ -22,6 +22,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
     * Makes the game re-roll your cards after mostly any action
 * 0.1
     * Initial Release
-
-
-
+Inspiration, code snippets,Help etc.
+* [Lukky's tutorial](https://youtu.be/bP9zQyoYP28?si=UMT5X_i5ItskxVkl)
+* [Godot game engine](https://godotengine.org)
+* [Godot cafe discord server](https://discord.com/invite/zH7NUgz)
