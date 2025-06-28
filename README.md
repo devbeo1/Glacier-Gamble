@@ -5,10 +5,10 @@ blackjack game with the godot engine,taken from [lukky's tutorial](https://youtu
 
 Contributors names and contact info
 
-Owner/Frostyhill:
-Discord:frostyhill
+* Owner/Frostyhill:
+ * Discord:frostyhill
 
-QA/Tester/Noelle:
+* QA/Tester/Noelle:
  * Discord:_noelleluv_
  * Roblox:Innybin789
  * Youtube:NoelleLuv
