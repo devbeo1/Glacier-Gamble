@@ -6,7 +6,14 @@ blackjack game with the godot engine,taken from [lukky's tutorial](https://youtu
 Contributors names and contact info
 
 Owner/Frostyhill:
-discord:frostyhill
+Discord:frostyhill
+
+QA/Tester/Noelle:
+Discord:_noelleluv_
+Roblox:Innybin789
+Youtube:NoelleLuv
+Spotify:The King of Curses
+
 
 ## License
 
