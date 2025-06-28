@@ -109,7 +109,7 @@ func _on_hit_pressed() -> void:
 		add_card(randi_range(0,cards.size() - 1),true)
 		add_card(randi_range(0,cards.size() - 1),true)
 		$"../chips".add_chip(randi_range(0,$"../chips".chip_models.size() - 1))
-	elif dealer_card_value < player_cards_value:
+	elif dealer_card_value > player_cards_value:
 		$"../Camera3D/ui/standhittypeshi/won_lost".text = "Dealer wins!"
 		$"../chips".money -= 500
 		$"../Camera3D/ui/extras/money won".text = "-500"
