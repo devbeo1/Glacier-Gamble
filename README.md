@@ -15,7 +15,6 @@ blackjack game with the godot engine,taken from [lukky's tutorial](https://youtu
 * Download this code by running
   ```
   git clone https://github.com/devbeo1/Glacier-Gamble.git
-
   ```
   * Open the project with Godot
   * Go to Project>Export>Your OS>Export all (Note,if you dont have the export template you need to install it)
