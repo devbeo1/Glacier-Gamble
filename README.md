@@ -1,4 +1,4 @@
-# Blackjack
+# Glacier Gamble
 blackjack game with the godot engine,taken from [lukky's tutorial](https://youtu.be/bP9zQyoYP28?si=UMT5X_i5ItskxVkl) and heavily modified
 
 ## Authors
