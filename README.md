@@ -9,10 +9,10 @@ Owner/Frostyhill:
 Discord:frostyhill
 
 QA/Tester/Noelle:
-Discord:_noelleluv_
-Roblox:Innybin789
-Youtube:NoelleLuv
-Spotify:The King of Curses
+ * Discord:_noelleluv_
+ * Roblox:Innybin789
+ * Youtube:NoelleLuv
+ * Spotify:The King of Curses
 
 
 ## License
