@@ -1,6 +1,26 @@
 # Glacier Gamble
 blackjack game with the godot engine,taken from [lukky's tutorial](https://youtu.be/bP9zQyoYP28?si=UMT5X_i5ItskxVkl) and heavily modified
 
+## Getting Started
+
+### Dependencies
+
+* Godot 4+
+* Git
+
+
+### Installing
+
+* Install Godot 4+ from [The godot site](https://godotengine.org)
+* Download this code by running
+  ```
+  git clone https://github.com/devbeo1/Glacier-Gamble.git
+
+  ```
+  * Open the project with Godot
+  * Go to Project>Export>Your OS>Export all (Note,if you dont have the export template you need to install it)
+  * Now go to the project folder builds>your OS>the Glacier Gamble file
+
 ## Authors
 
 Contributors names and contact info
