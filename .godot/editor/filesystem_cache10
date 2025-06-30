@@ -1,10 +1,10 @@
 72322a848ab928aa5c89f0cb78209805
-::res://::1751110536
-export_presets.cfg::TextFile::-1::1751051635::0::1::::<><><>0<>0<><>::
+::res://::1751314624
+export_presets.cfg::TextFile::-1::1751282260::0::1::::<><><>0<>0<><>::
 ::res://assets/::1751051111
-::res://assets/Cards (large)/::1746360694
+::res://assets/Cards (large)/::1751313938
 _cards.csv::Translation/Translation::224549024935406098::1746359504::1746360694::0::::<><><>0<>0<>883e28e726a615253d3eaa05fe6576a2<>::
-card_back.png::CompressedTexture2D/CompressedTexture2D::31105740416966583::1746359504::1746360694::1::::<><><>0<>0<>ca5fca83b9b04b0552a04095f6a519ec<>res://.godot/imported/card_back.png-82bc88057ce359dcae777f51d62939ef.ctex::
+card_back.png::CompressedTexture2D/CompressedTexture2D::31105740416966583::1746359504::1751313938::1::::<><><>0<>0<>30edca2d0d281d9834a43d31c78a6daa<>res://.godot/imported/card_back.png-82bc88057ce359dcae777f51d62939ef.s3tc.ctex<*>res://.godot/imported/card_back.png-82bc88057ce359dcae777f51d62939ef.etc2.ctex::
 card_clubs_02.png::CompressedTexture2D/CompressedTexture2D::7242711751231996127::1746359504::1746360694::1::::<><><>0<>0<>2166353d3ae930b7c3eea58f3b934cff<>res://.godot/imported/card_clubs_02.png-de276c17b1f996bb604dcd4dd53bd2ed.ctex::
 card_clubs_03.png::CompressedTexture2D/CompressedTexture2D::6703325844611499700::1746359504::1746360694::1::::<><><>0<>0<>e7cef4cf5457cbb918e9efe800d76bcf<>res://.godot/imported/card_clubs_03.png-142234b2908680b89f24a4310ea7f7c4.ctex::
 card_clubs_04.png::CompressedTexture2D/CompressedTexture2D::6822577089661561270::1746359504::1746360694::1::::<><><>0<>0<>cbb818dec6f53c7d5d826fc17eb8112c<>res://.godot/imported/card_clubs_04.png-8d2da9f32ed5c6d65dd9bc212fd81367.ctex::
@@ -132,8 +132,8 @@ kJt7I9.png::CompressedTexture2D::3293055702093200164::1750180083::1751051181::1:
 casino_poker_table.glb::PackedScene/PackedScene::494856718729666226::1746359504::1746360713::1::::<><><>0<>0<>e84fbf61453774d6dc93d4e3ca2c7ec7<>res://.godot/imported/casino_poker_table.glb-d5a01342f92403b075409c9723f1a8ef.scn::uid://bvbql8tiq3y1k::::res://assets/table/casino_poker_table_0.png
 casino_poker_table_0.png::CompressedTexture2D/CompressedTexture2D::3863443656470890750::1746359504::1746360698::1::::<><><>0<>0<>e065f17f8dab32fcbcbae17591fd5fa6<>res://.godot/imported/casino_poker_table_0.png-b197825b17a8e2966d33a2252a8f7d40.s3tc.ctex<*>res://.godot/imported/casino_poker_table_0.png-b197825b17a8e2966d33a2252a8f7d40.etc2.ctex::
 ::res://builds/::1751051173
-::res://builds/linux/::1751110433
-::res://builds/windows/::1751110415
+::res://builds/linux/::1751282941
+::res://builds/windows/::1751282951
 ::res://scenes/::1746559282
 sprite_3d.tscn::PackedScene/PackedScene::662004721947139791::1746559282::0::1::::<><><>0<>0<><>::
 ::res://scenes/cards/::1746695813
@@ -150,14 +150,14 @@ chips_red.tscn::PackedScene/PackedScene::1919453986557142485::1746359505::0::1::
 chips_whiteinside.tscn::PackedScene/PackedScene::9085941087082647980::1746359505::0::1::::<><><>0<>0<><>::
 chips_yellow.tscn::PackedScene/PackedScene::988177842701436519::1746359505::0::1::::<><><>0<>0<><>::
 sketchfab_scene.tscn::PackedScene/PackedScene::2116694059133329986::1746359505::0::1::::<><><>0<>0<><>::uid://c53o5o5qfkrm::::res://assets/chips/scene.gltf
-::res://scenes/game/::1750447621
-game.tscn::PackedScene::1741370874838488325::1750447621::0::1::::<><><>0<>0<><>::uid://co2x8qyvxc6mk::::res://scripts/game.gd<>uid://hbyhn3xq48v3::::res://assets/table/casino_poker_table.glb<>uid://o2bbndsn5riv::::res://assets/font/Kenney Future Square.ttf<>uid://d1pvlhw11pan::::res://assets/casino sounds/Audio/card-place-1.ogg<>uid://xw1c6j4toy6p::::res://scenes/chips/chips.tscn<>uid://dj23pwjy6aqk0::::res://scenes/cards/card_stack.tscn<>uid://b08un6ckh4x0n::::res://assets/casino sounds/Audio/chip-lay-1.ogg<>uid://cmbshhsd0nkl::::res://assets/casino sounds/Audio/card-fan-1.ogg
+::res://scenes/game/::1751314395
+game.tscn::PackedScene::1741370874838488325::1751314395::0::1::::<><><>0<>0<><>::uid://co2x8qyvxc6mk::::res://scripts/game.gd<>uid://hbyhn3xq48v3::::res://assets/table/casino_poker_table.glb<>uid://o2bbndsn5riv::::res://assets/font/Kenney Future Square.ttf<>uid://d1pvlhw11pan::::res://assets/casino sounds/Audio/card-place-1.ogg<>uid://xw1c6j4toy6p::::res://scenes/chips/chips.tscn<>uid://dj23pwjy6aqk0::::res://scenes/cards/card_stack.tscn<>uid://b08un6ckh4x0n::::res://assets/casino sounds/Audio/chip-lay-1.ogg<>uid://cmbshhsd0nkl::::res://assets/casino sounds/Audio/card-fan-1.ogg<>uid://joxed6073xm2::::res://scenes/sprite_3d.tscn<>uid://pcko5lh8k28::::res://assets/Cards (large)/card_back.png
 ::res://scenes/menus/::1750354601
 main_game.tscn::PackedScene/PackedScene::5465082674402798100::1745932857::0::1::::<><><>0<>0<><>::uid://caxp2hqax7e4i::::res://scripts/chips.gd<>uid://o2bbndsn5riv::::res://assets/font/Kenney Future Square.ttf
 main_menu.tscn::PackedScene::5465082674402798100::1750354601::0::1::::<><><>0<>0<><>::uid://caxp2hqax7e4i::::res://scripts/chips.gd<>uid://2l2ekqyk3i6x::::res://scenes/chips/chips_red.tscn<>uid://pgcw3q4ip1n4::::res://scripts/main_menu_ui.gd<>uid://eygkre1ptkdb::::res://scenes/chips/chips_blackinside_whiteoutside.tscn<>uid://o2bbndsn5riv::::res://assets/font/Kenney Future Square.ttf<>uid://b8rego0x8mu67::::res://scenes/chips/chips_blue.tscn<>uid://ocxe6jc0gfid::::res://scenes/chips/chips_yellow.tscn<>uid://d2pkefkgsvcme::::res://scenes/chips/chips_whiteinside.tscn<>uid://cxxupasq3gc7s::::res://scenes/chips/chips_pink.tscn<>uid://bj52b331pqjf::::res://scenes/chips/chips_green.tscn<>uid://b1obchswefoku::::res://scenes/chips/chips_gray.tscn
 ::res://scripts/::1750332624
-card_stack.gd::GDScript::2635449284981704192::1750936267::0::1::::<>Node3D<><>0<>0<><>::
-ch1ps.gd::GDScript::157480569905104492::1750936576::0::1::::<>Node3D<><>0<>0<><>::
+card_stack.gd::GDScript::2635449284981704192::1751290755::0::1::::<>Node3D<><>0<>0<><>::
+ch1ps.gd::GDScript::157480569905104492::1751290963::0::1::::<>Node3D<><>0<>0<><>::
 chips.gd::GDScript/GDScript::4821281419468826850::1748785428::0::1::::<>Node3D<><>0<>0<><>::
 game.gd::GDScript::5812679678144662462::1749296764::0::1::::<>Node3D<><>0<>0<><>::
 main_menu_ui.gd::GDScript/GDScript::1065381139245897815::1749131813::0::1::::<>Control<><>0<>0<><>::

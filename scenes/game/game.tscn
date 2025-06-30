@@ -16,7 +16,7 @@ background_mode = 1
 script = ExtResource("1_0sr1o")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(0.999903, -0.00205811, 0.0137696, -0.0114752, 0.438221, 0.898794, -0.00788392, -0.898865, 0.438155, 0, 4.327, 2.22)
+transform = Transform3D(0.9999031, -0.0020581062, 0.013769556, -0.011475201, 0.438221, 0.89879405, -0.007883921, -0.898865, 0.4381549, 0, 4.327, 3.8735428)
 
 [node name="ui" type="Control" parent="Camera3D"]
 layout_mode = 3
@@ -247,10 +247,10 @@ theme_override_fonts/font = ExtResource("2_87uf6")
 theme_override_font_sizes/font_size = 25
 
 [node name="Sketchfab_Scene" parent="." instance=ExtResource("1_sul5r")]
-transform = Transform3D(0.045, 0, 0, 0, 0.045, 0, 0, 0, 0.045, 0, 0, 0)
+transform = Transform3D(0.045, 0, 0, 0, 0.045, 0, 0, 0, 0.045, 0, 0, 1.6535425)
 
 [node name="SpotLight3D" type="SpotLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.017592, 0.999845, 0, -0.999845, 0.017592, 0, 3.15793, 0.661164)
+transform = Transform3D(1, 0, 0, 0, 0.017592004, 0.99984527, 0, -0.99984527, 0.017592004, 0, 3.15793, 2.3147066)
 spot_range = 1689.74
 spot_attenuation = -0.15
 spot_angle = 89.99
@@ -259,7 +259,7 @@ spot_angle = 89.99
 environment = SubResource("Environment_0sr1o")
 
 [node name="chips" parent="." instance=ExtResource("4_kelw5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0426254, 2.5859, 0.963773)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0426254, 2.5859, 2.6173155)
 
 [node name="audios" type="Node" parent="."]
 
@@ -273,7 +273,7 @@ stream = ExtResource("5_87uf6")
 stream = ExtResource("6_2a8rs")
 
 [node name="Node3D" parent="." instance=ExtResource("4_lfrn8")]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.48371, 2.50103, 1.10591)
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.48371, 2.50103, 2.7594523)
 
 [node name="cards" parent="Node3D" index="0"]
 transform = Transform3D(1.08757, -0.507142, 0, 0.507142, 1.08757, 0, 0, 0, 1.2, 1.22162, -0.193011, 0)

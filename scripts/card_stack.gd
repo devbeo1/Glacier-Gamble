@@ -1,7 +1,8 @@
 extends Node3D
+#card placment vars
 var current_x_offset:float = 0.0
 var x_step:float = 0.4
-var player_cards_value:int
+#very big array with all card sprites
 @onready var cards = [
 	preload("res://assets/Cards (large)/card_clubs_02.png"),
 	preload("res://assets/Cards (large)/card_clubs_03.png"),
@@ -56,15 +57,22 @@ var player_cards_value:int
 	preload("res://assets/Cards (large)/card_spades_Q.png"),
 	preload("res://assets/Cards (large)/card_spades_A.png")
 ]
+#very big array with all card values
 const CARD_VALUES = [2,3,4,5,6,7,8,9,10,10,10,10,1,2,3,4,5,6,7,8,9,10,1,10,10,10,2,3,4,5,6,7,8,9,10,1,10,10,1,2,3,4,5,6,7,8,9,10,1,10,10,1]
+#card values
 var dealer_card_value:int
+var player_cards_value:int
 
 func _ready() -> void:
+	#adds card in the beggining and sets the card value of the dealer a random number from 1 to 21 instead of rendering an actual card
 	add_card(randi_range(0,cards.size() - 1),true)
 	add_card(randi_range(0,cards.size() - 1),true)
 	dealer_card_value = randi_range(1,21)
 
 func add_card(id:int,is_player:bool):
+	#adds card by taking the texture in the cards var and setting it to the new card var texture and sets it offset
+	#also if sound is enabled its played
+	#and adds the card value to the player if the is_player bool is true 
 	var new_card = preload("res://scenes/cards/card.tscn").instantiate()
 	if DataManager.is_sound == true:
 		$"../audios/card fan".play()
@@ -77,9 +85,10 @@ func add_card(id:int,is_player:bool):
 
 
 func _on_stand_pressed() -> void:
-	print(dealer_card_value)
-	print(player_cards_value)
+	#adds 1 card
 	add_card(randi_range(0,cards.size() - 1),true)
+	#checks if the card value of the player is more that 21
+	#if true they bust and lose
 	if player_cards_value > 21:
 		$"../Camera3D/ui/standhittypeshi/won_lost".text = "You busted!"
 		current_x_offset = 0.0
@@ -90,6 +99,7 @@ func _on_stand_pressed() -> void:
 		$"../Camera3D/ui/standhittypeshi".visible = false
 		add_card(randi_range(0,cards.size() - 1),true)
 		add_card(randi_range(0,cards.size() - 1),true)
+		#same thing as above but with the dealer
 	elif dealer_card_value > 21:
 		$"../Camera3D/ui/standhittypeshi/won_lost".text = "Dealer busted!"
 		$"../chips".money += 500
@@ -99,8 +109,8 @@ func _on_stand_pressed() -> void:
 
 
 func _on_hit_pressed() -> void:
-	print(dealer_card_value)
-	print(player_cards_value)
+	#checks the card value of the player
+	#if true the player wins
 	if player_cards_value > dealer_card_value:
 		$"../Camera3D/ui/standhittypeshi/won_lost".text = "Player wins!"
 		$"../chips".money += 500
@@ -109,6 +119,7 @@ func _on_hit_pressed() -> void:
 		add_card(randi_range(0,cards.size() - 1),true)
 		add_card(randi_range(0,cards.size() - 1),true)
 		$"../chips".add_chip(randi_range(0,$"../chips".chip_models.size() - 1))
+		#same thing above but with the dealer
 	elif dealer_card_value > player_cards_value:
 		$"../Camera3D/ui/standhittypeshi/won_lost".text = "Dealer wins!"
 		$"../chips".money -= 500
@@ -132,8 +143,11 @@ func _on_button_2_pressed() -> void:
 		    
 
 func _process(_delta):
+	#checks if the players money less than/equals 0
+	#if true the player loses
 	if $"../chips".money <= 0:
 		current_x_offset = 0.0
+		dealer_card_value = randi_range(1,21)
 		player_cards_value = 0
 		$"../Camera3D/ui/lose".visible = true
 		$"../Camera3D/ui/add_chips".visible = false
@@ -141,6 +155,8 @@ func _process(_delta):
 		$"../Camera3D/ui/standhittypeshi".visible = false
 
 func reset_all():
+	#resets the cards and chips
+	dealer_card_value = randi_range(1,21)
 	$"../Node3D".current_x_offset = 0.0
 	$"../Node3D".player_cards_value = 0
 	for chips_children in $"../chips/chiossos".get_children():
@@ -149,6 +165,8 @@ func reset_all():
 		cardsosos.queue_free()
 
 func reset_cards():
+	#resets the cards
+	dealer_card_value = randi_range(1,21)
 	current_x_offset = 0.0
 	player_cards_value = 0
 	for cardsosos in $cards.get_children():

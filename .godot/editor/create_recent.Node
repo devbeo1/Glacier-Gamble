@@ -1,6 +1,7 @@
+AnimationPlayer
+Node3D
 Label
 Button
-Node3D
 ColorRect
 Control
 AudioStreamPlayer
