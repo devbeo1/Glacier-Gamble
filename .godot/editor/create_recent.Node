@@ -1,5 +1,6 @@
-AnimationPlayer
+Sprite3D
 Node3D
+AnimationPlayer
 Label
 Button
 ColorRect
@@ -8,4 +9,3 @@ AudioStreamPlayer
 Timer
 Node
 HBoxContainer
-Sprite3D

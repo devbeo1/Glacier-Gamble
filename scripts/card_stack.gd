@@ -74,12 +74,14 @@ func add_card(id:int,is_player:bool):
 	#also if sound is enabled its played
 	#and adds the card value to the player if the is_player bool is true 
 	var new_card = preload("res://scenes/cards/card.tscn").instantiate()
+	var tweeny = new_card.create_tween()
 	if DataManager.is_sound == true:
 		$"../audios/card fan".play()
 	new_card.texture = cards[id]
-	new_card.transform.origin.x = current_x_offset
 	current_x_offset += x_step
 	$cards.add_child(new_card)
+	tweeny.tween_property(new_card,"position",Vector3(current_x_offset,0.5,-0.096),1)
+	tweeny.tween_property(new_card,"position",Vector3(current_x_offset,1,-0.096),1)
 	if is_player == true:
 		player_cards_value += CARD_VALUES[id]
 
@@ -140,7 +142,7 @@ func _on_card_fan_finished() -> void:
 
 func _on_button_2_pressed() -> void:
 	get_tree().reload_current_scene()
-		    
+			
 
 func _process(_delta):
 	#checks if the players money less than/equals 0

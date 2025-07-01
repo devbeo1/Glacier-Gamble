@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://y2sehhofu52h"]
+[gd_scene load_steps=11 format=3 uid="uid://y2sehhofu52h"]
 
 [ext_resource type="Script" uid="uid://co2x8qyvxc6mk" path="res://scripts/game.gd" id="1_0sr1o"]
 [ext_resource type="PackedScene" uid="uid://hbyhn3xq48v3" path="res://assets/table/casino_poker_table.glb" id="1_sul5r"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://dj23pwjy6aqk0" path="res://scenes/cards/card_stack.tscn" id="4_lfrn8"]
 [ext_resource type="AudioStream" uid="uid://b08un6ckh4x0n" path="res://assets/casino sounds/Audio/chip-lay-1.ogg" id="5_87uf6"]
 [ext_resource type="AudioStream" uid="uid://cmbshhsd0nkl" path="res://assets/casino sounds/Audio/card-fan-1.ogg" id="6_2a8rs"]
+[ext_resource type="Texture2D" uid="uid://pcko5lh8k28" path="res://assets/Cards (large)/card_back.png" id="9_2a8rs"]
 
 [sub_resource type="Environment" id="Environment_0sr1o"]
 background_mode = 1
@@ -273,10 +274,63 @@ stream = ExtResource("5_87uf6")
 stream = ExtResource("6_2a8rs")
 
 [node name="Node3D" parent="." instance=ExtResource("4_lfrn8")]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.48371, 2.50103, 2.7594523)
+transform = Transform3D(0.93969256, 0.3420201, -1.4950174e-08, 0, -4.3711385e-08, -1, -0.3420201, 0.93969256, -4.1075268e-08, -1.3978298, 2.547, 1.4624449)
 
 [node name="cards" parent="Node3D" index="0"]
-transform = Transform3D(1.08757, -0.507142, 0, 0.507142, 1.08757, 0, 0, 0, 1.2, 1.22162, -0.193011, 0)
+transform = Transform3D(1.1103013, -0.45523137, -2.4763942e-09, 0.45523137, 1.1103013, 5.848477e-11, 2.2690794e-09, -9.935768e-10, 1.2000002, 0, 0.344, -0.096)
+
+[node name="cards" type="Node3D" parent="."]
+transform = Transform3D(1.6, 0, 0, 0, -6.9938224e-08, -1.6, 0, 1.6, -6.9938224e-08, -1.4618256, 2.546883, 0.77056324)
+
+[node name="Sprite3D" type="Sprite3D" parent="cards"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.34412265, 0)
+texture_filter = 0
+texture = ExtResource("9_2a8rs")
+
+[node name="Sprite3D2" type="Sprite3D" parent="cards"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.34400004, -0.015008211)
+texture_filter = 0
+texture = ExtResource("9_2a8rs")
+
+[node name="Sprite3D3" type="Sprite3D" parent="cards"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.34412265, -0.052173495)
+texture_filter = 0
+texture = ExtResource("9_2a8rs")
+
+[node name="Sprite3D4" type="Sprite3D" parent="cards"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3440001, -0.055172086)
+texture_filter = 0
+texture = ExtResource("9_2a8rs")
+
+[node name="Sprite3D5" type="Sprite3D" parent="cards"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.34412265, -0.03997481)
+texture_filter = 0
+texture = ExtResource("9_2a8rs")
+
+[node name="Sprite3D6" type="Sprite3D" parent="cards"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.34412265, -0.056319118)
+texture_filter = 0
+texture = ExtResource("9_2a8rs")
+
+[node name="Sprite3D7" type="Sprite3D" parent="cards"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3440001, -0.07132733)
+texture_filter = 0
+texture = ExtResource("9_2a8rs")
+
+[node name="Sprite3D8" type="Sprite3D" parent="cards"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.34412265, -0.10849261)
+texture_filter = 0
+texture = ExtResource("9_2a8rs")
+
+[node name="Sprite3D9" type="Sprite3D" parent="cards"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3440001, -0.11149132)
+texture_filter = 0
+texture = ExtResource("9_2a8rs")
+
+[node name="Sprite3D10" type="Sprite3D" parent="cards"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.34412265, -0.096293926)
+texture_filter = 0
+texture = ExtResource("9_2a8rs")
 
 [connection signal="pressed" from="Camera3D/ui/add_chips/add_chip_1d" to="chips" method="_on_add_chip_1d_pressed"]
 [connection signal="pressed" from="Camera3D/ui/add_chips/add_chip_2_5d" to="chips" method="_on_add_chip_2_5d_pressed"]
