@@ -64,7 +64,10 @@ We welcome any and all contributions! Here are some ways you can get started:
 * 0.1:
     * Initial Release.
   
-## Inspiration, code snippets,Help etc.
+## Inspiration, code snippets,help,credit etc.
 * [Lukky's tutorial](https://youtu.be/bP9zQyoYP28?si=UMT5X_i5ItskxVkl)
 * [Godot game engine](https://godotengine.org)
 * [Godot cafe discord server](https://discord.com/invite/zH7NUgz)
+* [Kenny for card and sound assets](kenney.nl)
+* [Nathan Powell's table asset](https://sketchfab.com/3d-models/casino-poker-table-f36fc75d825148618aa6e5cbfb43f28e)
+* [matveuk's chip assets](https://sketchfab.com/3d-models/poker-chip-set-b0cbee32720046e7b1e480cff44a5d41)
