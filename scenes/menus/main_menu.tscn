@@ -161,9 +161,8 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -1.0
 offset_top = -43.0
-offset_right = 377.0
+offset_right = 378.0
 offset_bottom = 34.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -211,8 +210,9 @@ color = Color(0, 0, 0, 0.741176)
 [node name="Label" type="Label" parent="Camera3D/UI/settings"]
 layout_mode = 0
 offset_left = -21.0
+offset_top = -12.0
 offset_right = 263.0
-offset_bottom = 58.0
+offset_bottom = 46.0
 theme_override_fonts/font = ExtResource("3_imvie")
 theme_override_font_sizes/font_size = 51
 text = "Settings"
@@ -286,54 +286,10 @@ offset_right = 388.0
 offset_bottom = 236.0
 text = "enable"
 
-[node name="about" type="ColorRect" parent="Camera3D/UI"]
-visible = false
-layout_mode = 0
-offset_right = 1375.0
-offset_bottom = 729.0
-color = Color(0, 0, 0, 0.741176)
-
-[node name="title" type="Label" parent="Camera3D/UI/about"]
-layout_mode = 0
-offset_right = 284.0
-offset_bottom = 48.0
-theme_override_fonts/font = ExtResource("3_imvie")
-theme_override_font_sizes/font_size = 51
-text = "ABOUT & CREDITS"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="credits and about" type="Label" parent="Camera3D/UI/about"]
-layout_mode = 0
-offset_left = -4.0
-offset_top = 74.0
-offset_right = 256.0
-offset_bottom = 175.0
-theme_override_fonts/font = ExtResource("3_imvie")
-text = "Game made by frostyhill usings lukkys blackjack
-game  tutorial with godot game engine and love <3
-Assets from kenny and sketchfab
-Game avalaible on Itch.io
-Thank you for playing! <3"
-
-[node name="back about" type="Button" parent="Camera3D/UI/about"]
-layout_mode = 0
-offset_left = -2.0
-offset_top = 590.0
-offset_right = 211.0
-offset_bottom = 649.0
-theme_override_fonts/font = ExtResource("3_imvie")
-theme_override_font_sizes/font_size = 46
-text = "Back"
-
-[node name="Label" type="Label" parent="Camera3D"]
-offset_right = 264.0
-offset_bottom = 52.0
-
 [node name="Label2" type="Label" parent="Camera3D"]
-offset_left = 1303.0
+offset_left = 1113.0
 offset_top = 1.0
-offset_right = 1343.0
+offset_right = 1153.0
 offset_bottom = 36.0
 theme_override_fonts/font = ExtResource("3_imvie")
 theme_override_font_sizes/font_size = 25
@@ -345,4 +301,3 @@ theme_override_font_sizes/font_size = 25
 [connection signal="pressed" from="Camera3D/UI/settings/sounds_on" to="Camera3D/UI" method="_on_sounds_on_pressed"]
 [connection signal="pressed" from="Camera3D/UI/settings/fullscreen_on" to="Camera3D/UI" method="_on_fullscreen_on_pressed"]
 [connection signal="pressed" from="Camera3D/UI/settings/fps_on" to="Camera3D/UI" method="_on_fps_on_pressed"]
-[connection signal="pressed" from="Camera3D/UI/about/back about" to="Camera3D/UI" method="_on_back_about_pressed"]

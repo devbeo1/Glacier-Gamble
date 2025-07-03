@@ -28,9 +28,12 @@ offset_right = 39.0
 offset_bottom = 92.0
 
 [node name="add_chips" type="Control" parent="Camera3D/ui"]
+modulate = Color(0.63375676, 0.6337569, 0.63375676, 1)
 anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = -2.0
+offset_top = -52.0
+offset_right = 38.0
+offset_bottom = -12.0
 
 [node name="title" type="Label" parent="Camera3D/ui/add_chips"]
 layout_mode = 0
@@ -126,34 +129,28 @@ vertical_alignment = 1
 
 [node name="money won" type="Label" parent="Camera3D/ui/extras"]
 layout_mode = 0
-offset_left = 1231.0
-offset_top = -47.0
-offset_right = 1571.0
-offset_bottom = 189.0
+offset_left = 815.0
+offset_top = -55.0
+offset_right = 1155.0
+offset_bottom = 181.0
 theme_override_fonts/font = ExtResource("2_87uf6")
 theme_override_font_sizes/font_size = 50
 
 [node name="money couter" type="Label" parent="Camera3D/ui/extras"]
 layout_mode = 0
-offset_left = 628.0
-offset_top = 580.0
-offset_right = 929.0
-offset_bottom = 648.0
+offset_left = 501.0
+offset_top = 556.0
+offset_right = 802.0
+offset_bottom = 624.0
 theme_override_fonts/font = ExtResource("2_87uf6")
 theme_override_font_sizes/font_size = 46
 text = "1000.0$"
 
-[node name="Button" type="Button" parent="Camera3D/ui/extras"]
-layout_mode = 0
-offset_right = 8.0
-offset_bottom = 8.0
-theme_override_fonts/font = ExtResource("2_87uf6")
-
 [node name="Button2" type="Button" parent="Camera3D/ui/extras"]
 layout_mode = 0
-offset_left = 1153.0
+offset_left = 943.0
 offset_top = 211.0
-offset_right = 1364.0
+offset_right = 1154.0
 offset_bottom = 256.0
 theme_override_fonts/font = ExtResource("2_87uf6")
 theme_override_font_sizes/font_size = 23
@@ -166,10 +163,10 @@ offset_bottom = 40.0
 
 [node name="won_lost" type="Label" parent="Camera3D/ui/standhittypeshi"]
 layout_mode = 0
-offset_left = 886.0
+offset_left = 885.0
 offset_top = -52.0
-offset_right = 1099.0
-offset_bottom = 2.0
+offset_right = 1098.0
+offset_bottom = 5.0
 theme_override_fonts/font = ExtResource("2_87uf6")
 theme_override_font_sizes/font_size = 50
 horizontal_alignment = 1
@@ -177,19 +174,19 @@ vertical_alignment = 1
 
 [node name="stand" type="Button" parent="Camera3D/ui/standhittypeshi"]
 layout_mode = 0
-offset_left = 1152.0
-offset_top = 560.0
-offset_right = 1359.0
-offset_bottom = 601.0
+offset_left = 948.0
+offset_top = 512.0
+offset_right = 1155.0
+offset_bottom = 553.0
 theme_override_fonts/font = ExtResource("2_87uf6")
 text = "stand"
 
 [node name="hit" type="Button" parent="Camera3D/ui/standhittypeshi"]
 layout_mode = 0
-offset_left = 1152.0
-offset_top = 603.0
-offset_right = 1359.0
-offset_bottom = 644.0
+offset_left = 948.0
+offset_top = 555.0
+offset_right = 1155.0
+offset_bottom = 596.0
 theme_override_fonts/font = ExtResource("2_87uf6")
 text = "hit
 "
@@ -202,16 +199,16 @@ offset_bottom = 40.0
 
 [node name="ColorRect" type="ColorRect" parent="Camera3D/ui/lose"]
 layout_mode = 0
-offset_top = -82.0
-offset_right = 1401.0
-offset_bottom = 662.0
+offset_top = -55.0
+offset_right = 1159.0
+offset_bottom = 598.0
 color = Color(0, 0, 0, 1)
 
 [node name="Button" type="Button" parent="Camera3D/ui/lose/ColorRect"]
 layout_mode = 0
-offset_left = 511.0
+offset_left = 455.0
 offset_top = 343.0
-offset_right = 848.0
+offset_right = 792.0
 offset_bottom = 403.0
 theme_override_fonts/font = ExtResource("2_87uf6")
 theme_override_font_sizes/font_size = 31
@@ -219,9 +216,9 @@ text = "retry"
 
 [node name="Button2" type="Button" parent="Camera3D/ui/lose/ColorRect"]
 layout_mode = 0
-offset_left = 509.0
+offset_left = 453.0
 offset_top = 403.0
-offset_right = 846.0
+offset_right = 790.0
 offset_bottom = 463.0
 theme_override_fonts/font = ExtResource("2_87uf6")
 theme_override_font_sizes/font_size = 31
@@ -229,10 +226,10 @@ text = "exit"
 
 [node name="Label" type="Label" parent="Camera3D/ui/lose/ColorRect"]
 layout_mode = 0
-offset_left = 310.0
+offset_left = 254.0
 offset_top = 237.0
-offset_right = 1042.0
-offset_bottom = 274.0
+offset_right = 986.0
+offset_bottom = 323.0
 theme_override_fonts/font = ExtResource("2_87uf6")
 theme_override_font_sizes/font_size = 76
 text = "you lost!"

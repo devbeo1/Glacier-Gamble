@@ -21,7 +21,8 @@ DataManager="*res://scripts/global/data_manager.gd"
 
 [display]
 
-window/size/mode=2
+window/size/mode=3
+window/stretch/mode="canvas_items"
 window/vsync/vsync_mode=0
 
 [file_customization]
