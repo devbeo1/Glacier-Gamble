@@ -1,11 +1,12 @@
+Label
+ColorRect
+Button
+VBoxContainer
+HBoxContainer
+Control
 Sprite3D
 Node3D
 AnimationPlayer
-Label
-Button
-ColorRect
-Control
 AudioStreamPlayer
 Timer
 Node
-HBoxContainer

@@ -79,9 +79,11 @@ func add_card(id:int,is_player:bool):
 		$"../audios/card fan".play()
 	new_card.texture = cards[id]
 	current_x_offset += x_step
+	new_card.rotation.x = 90
 	$cards.add_child(new_card)
-	tweeny.tween_property(new_card,"position",Vector3(current_x_offset,0.5,-0.096),1)
-	tweeny.tween_property(new_card,"position",Vector3(current_x_offset,1,-0.096),1)
+	tweeny.set_ease(Tween.EASE_IN_OUT)
+	tweeny.tween_property(new_card,"position",Vector3(current_x_offset,1,-0.096),0.5).from(Vector3(0.01,-0.08,1.142))
+	tweeny.tween_property(new_card,"rotation_degrees:x",0,0.01)
 	if is_player == true:
 		player_cards_value += CARD_VALUES[id]
 

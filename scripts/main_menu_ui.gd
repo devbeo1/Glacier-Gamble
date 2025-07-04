@@ -4,6 +4,14 @@ var fullscreen:bool = false
 var sound:bool = true
 var fps:bool = false
 
+func _process(_delta: float) -> void:
+	if DataManager.fps == true:
+		$"../Label2".text = str(Engine.get_frames_per_second())
+	elif DataManager.fps == false:
+		$"../Label2".text = ""
+	if $settings.visible ==  true:
+		if Input.is_action_just_pressed("hud"):
+			$settings.visible = false
 
 func _on_new_game_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/game/game.tscn")
@@ -47,11 +55,10 @@ func _on_back_about_pressed() -> void:
 
 func _on_fps_on_pressed() -> void:
 	fps = !fps
-	if fullscreen:
+	if fps:
 		DataManager.fps = false
-		$settings/fullscreen_on.text = "enable"
+		$settings/fps_on.text = "enable"
 		
 	else:
 		DataManager.fps = true
-		$"../Label2".text = str(Engine.get_frames_per_second())
-		$settings/fullscreen_on.text = "disable"
+		$settings/fps_on.text = "disable"
